@@ -23,21 +23,49 @@ body {
 }
 
 #box2 {
-    width: 300px;
-    height: 50px;
-    margin: auto;
-    position: absolute;
-    font-weight: bold;
-    background-color: rgb(243, 243, 243);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 30px;
-    box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-weight: bold;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  top: 72%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  font-size: 15px;
+  padding-left: 5%;
+  border-radius: 30px;
+  box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
 }
 
-#line { 
+
+#button {
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(86, 168, 97);
+  border: none;
+  color: white;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
+}
+
+#line {
     width: 350px;
     height: 2px;
     margin: auto;
@@ -61,26 +89,9 @@ body {
     right: 0;
 }
 
-#button {
-    width: 250px;
-    height: 10px;
-    cursor: pointer;
-    justify-content: center;
-    background-color: rgb(86, 168, 97);
-    font-weight: bold;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    font-size: 15px;
-    border-radius: 30px;
-    box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
-}
 
-/* #button:hover {background-color: rgb(42, 129, 49);}
+/*
+  #button:hover {background-color: rgb(42, 129, 49);}
 */
 
 #button:active {
