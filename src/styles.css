@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    height: calc_(100% - 4em);
+}
+body {
+    background: rgb(163, 10, 10);
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    display : flex;
+    flex-direction: column;
+}
+
