@@ -21,6 +21,16 @@ body {
     border: 60px;
     border-radius: 25px;
 }
+
+#navn {
+    color: black;
+    font-size: 20px;
+    top: 0;
+    bottom: 20%;
+    left: 0;
+    right: 100px;
+
+}
  /*
 #box2 {
   width: 300px;
@@ -102,12 +112,12 @@ body {
 
 #line {
     width: 750px;
-    height: 2px;
+    height: 1px;
     margin: auto;
     position: absolute;
     background-color: black;
     top: 0;
-    bottom: 400px;
+    bottom: 500px;
     left: 0;
     right: 0;
 }
@@ -136,14 +146,39 @@ body {
 }
 
 #input {
-    width: 200px;
-    height: 30px;
+    width: 350px;
+    height: 40px;
     margin: auto;
     position: absolute;
     background-color: rgb(195, 195, 195); 
     border: none;
     top: 0;
-    bottom: 440px;
-    left: 0;
-    right: 145px;
+    bottom: 560px;
+    left: 25px;
+    right: 546px;
+}
+
+#indkøbsliste {
+    padding-top: 8%;
+    padding-left: 45%;
+    font-size: 20px;
+}
+
+#findvarer {
+    padding-top: 10%;
+    padding-left: %;
+    font-size: 20px;
+}
+
+#varerinput {
+    width: 500px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(195, 195, 195); 
+    border: none;
+    top: 0;
+    bottom: 350px;
+    left: 25px;
+    right: 546px;
 }
