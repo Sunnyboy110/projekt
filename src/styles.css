@@ -134,7 +134,7 @@ body {
     left: 0;
     right: 0;
 }
-*/ 
+*/
 
 /*
   #button:hover {background-color: rgb(42, 129, 49);}
@@ -151,7 +151,7 @@ body {
     height: 40px;
     margin: auto;
     position: absolute;
-    background-color: rgb(195, 195, 195); 
+    background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
     bottom: 560px;
@@ -185,7 +185,7 @@ body {
     height: 40px;
     margin: auto;
     position: absolute;
-    background-color: rgb(195, 195, 195); 
+    background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
     bottom: 310px;
