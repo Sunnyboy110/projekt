@@ -27,9 +27,9 @@ body {
     color: black;
     font-size: 20px;
     position: absolute;
-    top: 70px;
+    top: 7%;
     bottom: 0;
-    left: 355px;
+    left: 3%;
     right: 0;
 }
  /*
@@ -195,3 +195,4 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* hej
