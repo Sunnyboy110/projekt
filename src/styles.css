@@ -80,7 +80,7 @@ body {
     margin-left: 2%;
     font-weight: bold;
     color: white;
-    position: fixed;
+    position: absolute;
     font-size: 20px;
     text-align: left;
 }
