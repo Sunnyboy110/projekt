@@ -9,8 +9,8 @@ body {
 }
 
 #box {
-    width: 400px;
-    height: 650px;
+    width: 800px;
+    height: 95%;
     margin: auto;
     position: absolute;
     background-color: white;
@@ -18,10 +18,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 30px;
     border: 60px;
+    border-radius: 25px;
 }
-
+ /*
 #box2 {
   width: 300px;
   height: 50px;
@@ -43,30 +43,65 @@ body {
   border-radius: 30px;
   box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
 }
+*/
 
 
 #button {
-  width: 200px;
-  height: 40px;
+  width: 750px;
+  height: 80px;
   margin: auto;
   position: absolute;
   font-weight: bold;
   cursor: pointer;
-  background-color: rgb(86, 168, 97);
+  background-color: rgb(92, 186, 105);
   border: none;
-  color: white;
-  top: 90%;
+  top: 80%;
   bottom: 0;
   left: 0;
   right: 0;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 30px;
   box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
 }
 
+#Buttontext {
+    margin-left: 2%;
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    text-align: left;
+}
+
+#Buttontext2 {
+    margin-right: 5%;
+    font-weight: bold;
+    color: white;
+    position: center;
+    font-size: 20px;
+    text-align: right;
+}
+
+#Buttonpant {
+    font-size: 7px;
+    margin-right: 5%;
+    text-align: right;
+    font-weight: lighter;
+    color: white;
+}
+
+#Buttonmoms {
+    font-size: 7px;
+    position: center;
+    font-weight: lighter;
+    margin-right: 5%;
+    text-align: right;
+    color: white;
+}
+
 #line {
-    width: 350px;
+    width: 750px;
     height: 2px;
     margin: auto;
     position: absolute;
@@ -77,7 +112,7 @@ body {
     right: 0;
 }
 
-#line2 {
+/* #line2 {
     width: 350px;
     height: 2px;
     margin: auto;
@@ -88,7 +123,7 @@ body {
     left: 0;
     right: 0;
 }
-
+*/ 
 
 /*
   #button:hover {background-color: rgb(42, 129, 49);}
@@ -101,5 +136,14 @@ body {
 }
 
 #input {
-    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(195, 195, 195); 
+    border: none;
+    top: 0;
+    bottom: 440px;
+    left: 0;
+    right: 145px;
 }
