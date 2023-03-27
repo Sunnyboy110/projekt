@@ -58,8 +58,8 @@ body {
 
 
 #button {
-  width: 750px;
-  height: 80px;
+  width: 85%;
+  height: 10%;
   margin: auto;
   position: absolute;
   font-weight: bold;
@@ -112,8 +112,8 @@ body {
 }
 
 #line {
-    width: 750px;
-    height: 1px;
+    width: 94%;
+    height: 0.1%;
     margin: auto;
     position: absolute;
     background-color: black;
@@ -147,16 +147,16 @@ body {
 }
 
 #input {
-    width: 350px;
-    height: 40px;
+    width: 45%;
+    height: 5%;
     margin: auto;
     position: absolute;
     background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
     bottom: 75%;
-    left: 25px;
-    right: 546px;
+    left: 0;
+    right: 48.5%;
 }
 
 #indkøbsliste {
@@ -181,8 +181,8 @@ body {
 }
 
 #varerinput {
-    width: 500px;
-    height: 40px;
+    width: 60%;
+    height: 5%;
     margin: auto;
     position: absolute;
     background-color: rgb(195, 195, 195);
@@ -190,9 +190,9 @@ body {
     top: 0;
     bottom: 40%;
     left: 0;
-    right: 31%;
+    right: 33%;
     font-family: Arial, Helvetica, sans-serif;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* hej
+/* hej */
