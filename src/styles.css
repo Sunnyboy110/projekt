@@ -80,7 +80,7 @@ body {
     margin-left: 2%;
     font-weight: bold;
     color: white;
-    position: fixed;
+    position: absolute;
     font-size: 20px;
     text-align: left;
 }
@@ -154,28 +154,28 @@ body {
     background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
-    bottom: 560px;
-    left: 25px;
-    right: 546px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #indkøbsliste {
     color: black;
     font-size: 20px;
-    position: fixed;
-    top: 160px;
+    position: absolute;
+    top: 22%;
     bottom: 0;
-    left: 670px;
+    left: 40%;
     right: 0;
 }
 
 #findvarer {
     color: black;
     font-size: 20px;
-    position: fixed;
-    top: 195px;
+    position: absolute;
+    top: 25%;
     bottom: 0;
-    left: 356px;
+    left: 3%;
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -195,4 +195,3 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* hej
