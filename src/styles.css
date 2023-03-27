@@ -27,7 +27,7 @@ body {
     color: black;
     font-size: 20px;
     position: absolute;
-    top: 7%;
+    top: 6%;
     bottom: 0;
     left: 3%;
     right: 0;
@@ -118,7 +118,7 @@ body {
     position: absolute;
     background-color: black;
     top: 0;
-    bottom: 500px;
+    bottom: 65%;
     left: 0;
     right: 0;
 }
@@ -154,7 +154,7 @@ body {
     background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
-    bottom: 560px;
+    bottom: 75%;
     left: 25px;
     right: 546px;
 }
@@ -162,20 +162,20 @@ body {
 #indkøbsliste {
     color: black;
     font-size: 20px;
-    position: fixed;
-    top: 160px;
+    position: absolute;
+    top: 18%;
     bottom: 0;
-    left: 670px;
+    left: 45%;
     right: 0;
 }
 
 #findvarer {
     color: black;
     font-size: 20px;
-    position: fixed;
-    top: 195px;
+    position: absolute;
+    top: 23%;
     bottom: 0;
-    left: 356px;
+    left: 3%;
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -188,9 +188,9 @@ body {
     background-color: rgb(195, 195, 195);
     border: none;
     top: 0;
-    bottom: 310px;
-    left: 25px;
-    right: 546px;
+    bottom: 40%;
+    left: 0;
+    right: 31%;
     font-family: Arial, Helvetica, sans-serif;
 }
 html, body { height: 100%; }
