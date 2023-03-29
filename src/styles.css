@@ -7,9 +7,9 @@ body, html {
 }
 body {
     background: rgb(195, 20, 20);
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
     font-family:Arial, Helvetica, sans-serif
 }
 
@@ -26,9 +26,28 @@ body {
     border-radius: 3%;
 }
 
+#arrow {
+  font-size: 250%;
+  margin: 1.5%;
+  margin-left: 2%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 30%;
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+}
+
+#arrow:hover {background-color: rgb(209, 209, 209);}
+
+#arrow:active {
+  background-color: #919191;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(2px);
+}
+
 #navn {
     color: black;
-    font-size: 140%;
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 1.5;
     position: absolute;
     top: 6%;
     bottom: 0;
@@ -80,7 +99,8 @@ body {
 }
 
 #Buttontext {
-    margin-left: 2%;
+    margin: 1.5%;
+    margin-left: 4%;
     font-weight: bold;
     color: white;
     position: absolute;
@@ -164,7 +184,9 @@ body {
 
 #indkøbsliste {
     color: black;
-    font-size: 20px;
+    font-size: 1.953rem;
+    font-weight: 400;
+    line-height: 1.5;
     position: absolute;
     top: 18%;
     bottom: 0;
@@ -174,7 +196,9 @@ body {
 
 #findvarer {
     color: black;
-    font-size: 20px;
+    font-size: 1.563rem;
+    font-weight: 400;
+    line-height: 1.5;
     position: absolute;
     top: 23%;
     bottom: 0;
@@ -193,9 +217,9 @@ body {
     top: 0;
     bottom: 40%;
     left: 0;
-    right: 33%;
+    right: 33.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-/* hej */
+
