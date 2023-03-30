@@ -1,1 +1,64 @@
-<p>store works!</p>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<body>
+
+  <!-- WHITE BIG BOX -->
+  <div id="box">
+
+    <a routerLink="/home">
+      <button id="arrow" type="button" class="material-icons">
+        arrow_back
+      </button>
+    </a>
+
+
+  <!-- UPPER BOX -->
+    <div>
+      <div id="navn">
+        Navn
+      </div>
+
+      <div>
+        <input id="input" type="text" placeholder ="Skriv dit fulde navn her...">
+      </div>
+
+      <div id="line">
+      </div>
+    </div>
+
+    <!-- MIDDLE BOX -->
+    <div>
+      <div id="indkøbsliste">
+        Indkøbsliste
+      </div>
+      <div id="findvarer">
+        Find varer
+      </div>
+
+      <div>
+        <input id="varerinput" type="text" placeholder="Søg efter varer her...">
+      </div>
+    </div>
+
+    <!-- BOTTOM BOX -->
+    <div>
+      <div id="line2"></div>
+
+      <div>
+        <div id="box2">
+        </div>
+      </div>
+
+      <div>
+        <button id="button" type="button">
+          <div id="Buttontext">Fortsæt til bestilling</div>
+          <div id="Buttontext2">0 Kr.</div>
+          <div id="Buttonpant">Heraf pant 0 kr.</div>
+          <div id="Buttonmoms">Heraf moms 0 kr.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<router-outlet></router-outlet>
