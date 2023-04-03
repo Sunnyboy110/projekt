@@ -13,6 +13,48 @@ body {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+#adminbutton {
+  width: 5%;
+  height: 10%;
+  margin: 1%;
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
+}
+
+#adminbutton:hover {background-color: rgb(219, 219, 219);}
+
+#adminbutton:active {
+  background-color: #9c9c9c;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(3px);
+}
+
+#admintext {
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 40%;
+}
+
+#adminicon {
+  font-size: 170%;
+  color: rgb(195, 20, 20);
+  margin-top: 1%;
+  line-height: 0.6;
+}
+
+#adminarrow {
+  font-size: 100%;
+  font-weight: 100;
+  margin-left: 60%;
+  color: rgb(195, 20, 20);
+}
+
 #storebutton {
   width: 25%;
   height: 50%;
@@ -29,7 +71,6 @@ body {
   border-radius: 30px;
   box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
 }
-
 
 #storebutton:hover {background-color: rgb(219, 219, 219);}
 
@@ -57,6 +98,7 @@ body {
   color: rgb(195, 20, 20);
 }
 
+
 #box {
     width: 55%;
     height: 95%;
@@ -69,6 +111,7 @@ body {
     right: 0;
     border-radius: 3%;
 }
+
 
 #arrow {
   font-size: 250%;
@@ -86,6 +129,27 @@ body {
   box-shadow: 0px 0px #000000;
   transform: translateY(2px);
 }
+
+
+#avis {
+  font-size: 750%;
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 75%;
+  color: rgb(195, 20, 20);
+  background-color: rgb(243, 243, 243);
+  border-radius: 30%;
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+}
+
+#avis:hover {background-color: rgb(219, 219, 219);}
+
+#avis:active {
+  background-color: #9c9c9c;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(3px);
+}
+
 
 #navn {
     color: black;
@@ -238,6 +302,78 @@ body {
     right: 0;
 }
 
+
+#vareliste {
+  color: black;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 23%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+}
+
+#findvarer {
+
+}
+
+#varerinput {
+    width: 60%;
+    height: 50px;
+    margin-top: 3.5%;
+    margin-bottom: 5%;
+    background-color: rgb(195, 195, 195);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#plus {
+  font-size: 200%;
+  margin-top: 3.2%;
+  margin-left: 15%;
+  position: absolute;
+  background-color: rgb(243, 243, 243);
+  border-radius: 100%;
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+}
+
+#plus:hover {background-color: rgb(209, 209, 209);}
+
+#plus:active {
+  background-color: #919191;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(2px);
+}
+
+#antalvarer {
+  font-size: 200%;
+  margin-top: 2.2%;
+  margin-left: 10%;
+  position: absolute;
+}
+
+#minus {
+  font-size: 200%;
+  margin-top: 3.2%;
+  margin-left: 3%;
+  position: absolute;
+  background-color: rgb(243, 243, 243);
+  border-radius: 100%;
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+}
+
+#minus:hover {background-color: rgb(209, 209, 209);}
+
+#minus:active {
+  background-color: #919191;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(2px);
+}
+
+/*
 #findvarer {
     color: black;
     font-size: 1.563rem;
@@ -264,6 +400,7 @@ body {
     right: 33.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
+*/
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
