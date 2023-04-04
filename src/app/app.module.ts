@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { StoreComponent } from './pages/store/store.component';
 import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
+import { SoegefeltComponent } from './soegefelt/soegefelt.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
     HomeComponent,
     StoreComponent,
     AdminSiteComponent,
+    SoegefeltComponent,
   ],
   imports: [
     BrowserModule,
