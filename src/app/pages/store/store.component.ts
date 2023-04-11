@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 @Component({
   selector: 'app-store',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./store.component.css']
 })
 export class StoreComponent {
+
+  constructor(private dialogRef : MatDialog){}
+
+  openDialog(){
+    this.dialogRef.open(PopUpComponent);
+  }
 
 }
