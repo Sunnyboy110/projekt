@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FrontEndComponent } from './front-end/front-end.component';
-import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { StoreComponent } from './pages/store/store.component';
+import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
+import { SoegefeltComponent } from './soegefelt/soegefelt.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FrontEndComponent,
+    HomeComponent,
+    StoreComponent,
+    AdminSiteComponent,
+    SoegefeltComponent
   ],
   imports: [
     BrowserModule,
