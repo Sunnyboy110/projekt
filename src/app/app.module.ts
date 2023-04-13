@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { StoreComponent } from './pages/store/store.component';
 import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
 import { SoegefeltComponent } from './soegefelt/soegefelt.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -22,6 +23,7 @@ import { SoegefeltComponent } from './soegefelt/soegefelt.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
