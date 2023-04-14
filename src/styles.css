@@ -136,22 +136,29 @@ body {
   right: 0;
 }
 
-#arrow {
-  font-size: 250%;
+#arrowButton {
+  width: 5%;
+  height: 10%;
   margin: 1.5%;
   margin-left: 2%;
+  cursor: pointer;
   background-color: rgb(243, 243, 243);
   border: none;
-  border-radius: 30%;
+  border-radius: 20px;
   box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
 }
 
-#arrow:hover {background-color: rgb(209, 209, 209);}
+#arrowButton:hover {background-color: rgb(209, 209, 209);}
 
-#arrow:active {
+#arrowButton:active {
   background-color: #919191;
   box-shadow: 0px 0px #000000;
   transform: translateY(2px);
+}
+
+#arrow {
+  font-size: 160%;
+  color: rgb(0,0,0);
 }
 
 
@@ -185,7 +192,6 @@ font-family: Arial, Helvetica, sans-serif;
 margin-top: 0%;
 margin-bottom: 10%;
 font-size: 1rem;
-
 }
 
 #avis {
@@ -193,7 +199,6 @@ font-size: 1rem;
   color: rgb(195, 20, 20);
   margin-top: 0%;
   line-height: 0.6;
-
 }
 
 #navn {
