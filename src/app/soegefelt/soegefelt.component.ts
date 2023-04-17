@@ -13,7 +13,6 @@ export class SoegefeltComponent{
   }
   searchChange(event:any) {
     const searchText = event.target.value;
-    console.log('det virker', searchText)
     this.searchService.search(searchText).subscribe ( result => {
       this.vareListe = result;
     })
