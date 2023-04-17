@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 
 @Component({
@@ -14,3 +16,13 @@ export class StoreComponent {
     this.odre = [...this.odre, vare]
   }
 }
+
+  constructor(private dialogRef : MatDialog){}
+
+  openDialog(){
+    this.dialogRef.open(PopUpComponent, {
+      height: '75%',
+      width: '45%'
+    } );
+  }
+ }

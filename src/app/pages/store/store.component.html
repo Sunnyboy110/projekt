@@ -1,7 +1,5 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-<body>
-
   <!-- WHITE BIG BOX -->
   <div id="box">
 
@@ -64,7 +62,7 @@
     <div>
       <div>
         <a routerLink="bestilling">
-          <button id="button" type="button">
+          <button (click)="openDialog()" id="button" type="button">
             <div id="Buttontext">Fortsæt til bestilling</div>
             <div id="Buttontext2">0 Kr.</div>
             <div id="Buttonpant">Heraf pant 0 kr.</div>
@@ -73,6 +71,5 @@
       </div>
     </div>
 </div>
-</body>
 
 <router-outlet></router-outlet>
