@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 })
 
 export class StoreComponent {
-
+  odre = [];
+  fremvisning(vare) {
+    console.log(vare)
+    this.odre = [...this.odre, vare]
+  }
 }
