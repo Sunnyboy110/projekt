@@ -8,7 +8,7 @@ import { StoreComponent } from './pages/store/store.component';
 import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
 import { SoegefeltComponent } from './soegefelt/soegefelt.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
