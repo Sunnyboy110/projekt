@@ -12,7 +12,9 @@ export class StoreComponent {
   constructor(private dialogRef : MatDialog){}
 
   openDialog(){
-    this.dialogRef.open(PopUpComponent);
+    this.dialogRef.open(PopUpComponent, {
+      height: '75%',
+      width: '45%'
+    } );
   }
-
-}
+ }
