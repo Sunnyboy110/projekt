@@ -1,16 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body, html {
-    height: calc_(100% - 4em);
+  height: calc_(100% - 4em);
 }
 body {
-    background: rgb(195, 20, 20);
-    font-weight: 400;
-    line-height: 1.75;
-    color: #000000;
-    font-family:Arial, Helvetica, sans-serif;
+  background: rgb(195, 20, 20);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #adminbutton {
@@ -100,92 +97,150 @@ body {
 
 
 #box {
-    width: 55%;
-    height: 95%;
-    margin: auto;
-    position: absolute;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 3%;
+  width: 55%;
+  height: 20%;
+  margin: auto;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  bottom: 78%;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px 0px rgb(88, 9, 9);
 }
 
+#box2 {
+  width: 55%;
+  height: 75%;
+  margin: auto;
+  position: absolute;
+  background-color: white;
+  top: 20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px 0px rgb(88, 9, 9);
+}
 
-#arrow {
-  font-size: 250%;
+#indkøbsliste {
+  color: black;
+  font-size: 1.953rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: absolute;
+  top: 1%;
+  bottom: 0;
+  left: 42%;
+  right: 0;
+}
+
+#arrowButton {
+  width: 50px;
+  height: 50px;
   margin: 1.5%;
   margin-left: 2%;
+  cursor: pointer;
   background-color: rgb(243, 243, 243);
-  border-radius: 30%;
+  border: none;
+  border-radius: 15px;
   box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
 }
 
-#arrow:hover {background-color: rgb(209, 209, 209);}
+#arrowButton:hover {background-color: rgb(209, 209, 209);}
 
-#arrow:active {
+#arrowButton:active {
   background-color: #919191;
   box-shadow: 0px 0px #000000;
   transform: translateY(2px);
 }
 
-
-#avis {
-  font-size: 750%;
-  position: absolute;
-  margin-top: 2%;
-  margin-left: 75%;
-  color: rgb(195, 20, 20);
-  background-color: rgb(243, 243, 243);
-  border-radius: 30%;
-  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+#arrow {
+  font-size: 160%;
+  color: rgb(0,0,0);
 }
 
-#avis:hover {background-color: rgb(219, 219, 219);}
 
-#avis:active {
+#avisButton {
+  width: 110px;
+  height: 100px;
+  margin: 1%;
+  position: absolute;
+  top: 10%;
+  bottom: 0%;
+  left: 85%;
+  right:0px;
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
+}
+
+#avisButton:hover {background-color: rgb(219, 219, 219);}
+
+#avisButton:active {
   background-color: #9c9c9c;
   box-shadow: 0px 0px #000000;
   transform: translateY(3px);
 }
 
+#avisTekst {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0%;
+  margin-bottom: 10%;
+  font-size: 1rem;
+}
+
+#avis {
+  font-size: 350%;
+  color: rgb(195, 20, 20);
+  margin-top: 0%;
+  line-height: 0.6;
+}
 
 #navn {
-    color: black;
-    font-size: 1.563rem;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    top: 6%;
-    bottom: 0;
-    left: 3%;
-    right: 0;
-}
- /*
-#box2 {
-  width: 300px;
-  height: 50px;
-  margin: auto;
-  vertical-align: middle;
-  display: flex;
-  align-items: center;
+  color: black;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.5;
   position: absolute;
-  font-weight: bold;
-  background-color: rgb(243, 243, 243);
-  border: none;
-  top: 72%;
+  top: 38%;
   bottom: 0;
+  left: 3%;
+  right: 0;
+}
+
+#input {
+  width: 45%;
+  height: 20%;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(195, 195, 195);
+  border: none;
+  top: 40%;
+  bottom: 0%;
+  left: 0;
+  right: 48.5%;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 0;
+}
+
+#line {
+  width: 94%;
+  height: 0.2%;
+  margin: auto;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 55%;
   left: 0;
   right: 0;
-  text-decoration: none;
-  font-size: 15px;
-  padding-left: 5%;
-  border-radius: 30px;
-  box-shadow: 0px 4px 3px -1px rgb(169, 169, 169);
 }
-*/
-
 
 #button {
   width: 85%;
@@ -207,127 +262,71 @@ body {
 }
 
 #Buttontext {
-    margin: 1.5%;
-    margin-left: 4%;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    text-align: left;
+  margin: 0.5%;
+  margin-left: 4%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
 }
 
 #Buttontext2 {
-    margin-right: 5%;
-    font-weight: bold;
-    color: white;
-    position: center;
-    font-size: 20px;
-    text-align: right;
+  margin-right: 5%;
+  font-weight: bold;
+  color: white;
+  position: center;
+  font-size: 20px;
+  text-align: right;
 }
 
 #Buttonpant {
-    font-size: 7px;
-    margin-right: 5%;
-    text-align: right;
-    font-weight: lighter;
-    color: white;
+  font-size: 7px;
+  margin-right: 5%;
+  text-align: right;
+  font-weight: lighter;
+  color: white;
 }
-
-#Buttonmoms {
-    font-size: 7px;
-    position: center;
-    font-weight: lighter;
-    margin-right: 5%;
-    text-align: right;
-    color: white;
-}
-
-#line {
-    width: 94%;
-    height: 0.1%;
-    margin: auto;
-    position: absolute;
-    background-color: black;
-    top: 0;
-    bottom: 65%;
-    left: 0;
-    right: 0;
-}
-
-/* #line2 {
-    width: 350px;
-    height: 2px;
-    margin: auto;
-    position: absolute;
-    background-color: black;
-    top: 400px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-*/
 
 /*
   #button:hover {background-color: rgb(42, 129, 49);}
 */
 
 #button:active {
-    background-color: #2b772d;
-    box-shadow: 0px 0px #000000;
-    transform: translateY(3px);
+  background-color: #2b772d;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(3px);
 }
 
-#input {
-    width: 45%;
-    height: 5%;
-    margin: auto;
-    position: absolute;
-    background-color: rgb(195, 195, 195);
-    border: none;
-    top: 0;
-    bottom: 75%;
-    left: 0;
-    right: 48.5%;
-}
-
-#indkøbsliste {
-    color: black;
-    font-size: 1.953rem;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    top: 18%;
-    bottom: 0;
-    left: 40%;
-    right: 0;
-}
-
-
-#vareliste {
+#findvarer {
   color: black;
   font-size: 1.563rem;
   font-weight: 400;
   line-height: 0;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top: 23%;
+  top: 10%;
   bottom: 0;
   left: 3%;
   right: 0;
 }
 
-#findvarer {
+#vareliste {
 
 }
 
 #varerinput {
-    width: 60%;
-    height: 50px;
-    margin-top: 3.5%;
-    margin-bottom: 5%;
-    background-color: rgb(195, 195, 195);
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: 40px;
+  margin-top: 3.5%;
+  margin-bottom: 5%;
+  background-color: rgb(195, 195, 195);
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 0;
 }
 
 #plus {
@@ -336,6 +335,7 @@ body {
   margin-left: 15%;
   position: absolute;
   background-color: rgb(243, 243, 243);
+  border: none;
   border-radius: 100%;
   box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
 }
@@ -361,6 +361,7 @@ body {
   margin-left: 3%;
   position: absolute;
   background-color: rgb(243, 243, 243);
+  border: none;
   border-radius: 100%;
   box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
 }
@@ -375,35 +376,32 @@ body {
 
 /*
 #findvarer {
-    color: black;
-    font-size: 1.563rem;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    top: 23%;
-    bottom: 0;
-    left: 3%;
-    right: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: absolute;
+  top: 23%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #varerinput {
-    width: 60%;
-    height: 5%;
-    margin: auto;
-    position: absolute;
-    background-color: rgb(195, 195, 195);
-    border: none;
-    top: 0;
-    bottom: 40%;
-    left: 0;
-    right: 33.5%;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: 5%;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(195, 195, 195);
+  border: none;
+  top: 0;
+  bottom: 40%;
+  left: 0;
+  right: 33.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -15,71 +15,72 @@
         <input id="input" type="text" placeholder ="Skriv dit fulde navn her...">
       </div>
 
-      <div id="line">
-      </div>
+
 
       <a routerLink="/home">
-        <button id="arrow" type="button" class="material-icons">
-          arrow_back
+        <button id="arrowButton" type="button" class="material-icons">
+          <div id="arrow">
+            arrow_back
+          </div>
         </button>
       </a>
       <a href="https://tilbud.dinetilbudsaviser.dk/LP/superbrugsen-tilbudsavis?msclkid=c71b906cf465140b5965f446563bb8a7&utm_source=bing&utm_medium=cpc&utm_campaign=DK%20Tilbudsavis%20CPA%200.08%2F0.05&utm_term=superbrugsen&utm_content=SuperBrugsen%20DK%20%23pc" target="_blank">
-        <button id="avis" type="button" class="material-icons">
-          menu_book
+        <button id="avisButton" type="button" class="material-icons">
+          <div id="avisTekst">
+            Tilbudsavis
+          </div>
+          <div id="avis">
+            menu_book
+          </div>
         </button>
       </a>
     </div>
+  </div>
 
-    <!-- MIDDLE BOX -->
+ <!-- MIDDLE BOX -->
+  <div id="box2">
     <div>
       <div id="indkøbsliste">
         Indkøbsliste
       </div>
     </div>
-    <ul id="vareliste">
-      <li>
+    <div id="line">
+    </div>
+      <div>
         <div id="findvarer">
           Find varer
-        </div>
         <div>
-          <input id="varerinput" type="text" placeholder="Søg efter varer her...">
-          <button id="minus" type="button" class="material-icons">
-            remove
-          </button>
-          <a id="antalvarer">
-            0
-          </a>
-          <button id="plus" type="button" class="material-icons">
-            add
-          </button>
-        </div>
-      </li>
-      <li>
-        Beep Boop
-      </li>
-    </ul>
-
-    <!-- BOTTOM BOX -->
-    <div>
-      <div id="line2"></div>
-
-      <div>
-        <div id="box2">
+          <!-- <input id="varerinput" type="text" placeholder="Søg efter varer her..."> -->
+          <app-soegefelt></app-soegefelt>
         </div>
       </div>
-
+      <div id="vareliste">
+        <!--
+        <button id="minus" type="button" class="material-icons">
+          remove
+        </button>
+        <a id="antalvarer">
+          0
+        </a>
+        <button id="plus" type="button" class="material-icons">
+          add
+        </button>
+      -->
+      </div>
+    </div>
+    <!-- BOTTOM BOX -->
+    <div>
       <div>
         <a routerLink="bestilling">
-          <button (click)="openDialog()" id="button" type="button">
+          <button id="button" type="button">
             <div id="Buttontext">Fortsæt til bestilling</div>
             <div id="Buttontext2">0 Kr.</div>
             <div id="Buttonpant">Heraf pant 0 kr.</div>
-            <div id="Buttonmoms">Heraf moms 0 kr.</div>
           </button>
         </a>
       </div>
     </div>
-  </div>
+</div>
 </body>
 
 <router-outlet></router-outlet>
