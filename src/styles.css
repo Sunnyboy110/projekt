@@ -137,8 +137,8 @@ body {
 }
 
 #arrowButton {
-  width: 5%;
-  height: 10%;
+  width: 50px;
+  height: 50px;
   margin: 1.5%;
   margin-left: 2%;
   cursor: pointer;
@@ -163,14 +163,14 @@ body {
 
 
 #avisButton {
-  width: 11%;
-  height: 58%;
+  width: 110px;
+  height: 100px;
   margin: 1%;
   position: absolute;
   top: 10%;
   bottom: 0%;
   left: 85%;
-  right:0%;
+  right:0px;
   cursor: pointer;
   background-color: rgb(243, 243, 243);
   border: none;
@@ -232,7 +232,7 @@ body {
 
 #line {
   width: 94%;
-  height: 0.1%;
+  height: 0.2%;
   margin: auto;
   position: absolute;
   background-color: black;
