@@ -1,13 +1,13 @@
 
 body, html {
-    height: calc_(100% - 4em);
+  height: calc_(100% - 4em);
 }
 body {
-    background: rgb(195, 20, 20);
-    font-weight: 400;
-    line-height: 1.75;
-    color: #000000;
-    font-family:Arial, Helvetica, sans-serif;
+  background: rgb(195, 20, 20);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 #adminbutton {
@@ -97,17 +97,17 @@ body {
 
 
 #box {
-    width: 55%;
-    height: 20%;
-    margin: auto;
-    position: absolute;
-    background-color: white;
-    top: 0;
-    bottom: 78%;
-    left: 0;
-    right: 0;
-    border-radius: 30px;
-    box-shadow: 0px 5px 5px 0px rgb(88, 9, 9);
+  width: 55%;
+  height: 20%;
+  margin: auto;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  bottom: 78%;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0px 5px 5px 0px rgb(88, 9, 9);
 }
 
 #box2 {
@@ -144,7 +144,7 @@ body {
   cursor: pointer;
   background-color: rgb(243, 243, 243);
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
 }
 
@@ -171,7 +171,6 @@ body {
   bottom: 0%;
   left: 85%;
   right:0%;
-  font-weight: bold;
   cursor: pointer;
   background-color: rgb(243, 243, 243);
   border: none;
@@ -188,10 +187,11 @@ body {
 }
 
 #avisTekst {
-font-family: Arial, Helvetica, sans-serif;
-margin-top: 0%;
-margin-bottom: 10%;
-font-size: 1rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0%;
+  margin-bottom: 10%;
+  font-size: 1rem;
 }
 
 #avis {
@@ -202,15 +202,15 @@ font-size: 1rem;
 }
 
 #navn {
-    color: black;
-    font-size: 1.563rem;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    top: 38%;
-    bottom: 0;
-    left: 3%;
-    right: 0;
+  color: black;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: absolute;
+  top: 38%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
 }
 
 #input {
@@ -228,6 +228,18 @@ font-size: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 0;
+}
+
+#line {
+  width: 94%;
+  height: 0.1%;
+  margin: auto;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 55%;
+  left: 0;
+  right: 0;
 }
 
 #button {
@@ -250,51 +262,30 @@ font-size: 1rem;
 }
 
 #Buttontext {
-    margin: 1.5%;
-    margin-left: 4%;
-    font-weight: bold;
-    color: white;
-    position: absolute;
-    font-size: 20px;
-    text-align: left;
+  margin: 0.5%;
+  margin-left: 4%;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
 }
 
 #Buttontext2 {
-    margin-right: 5%;
-    font-weight: bold;
-    color: white;
-    position: center;
-    font-size: 20px;
-    text-align: right;
+  margin-right: 5%;
+  font-weight: bold;
+  color: white;
+  position: center;
+  font-size: 20px;
+  text-align: right;
 }
 
 #Buttonpant {
-    font-size: 7px;
-    margin-right: 5%;
-    text-align: right;
-    font-weight: lighter;
-    color: white;
-}
-
-#Buttonmoms {
-    font-size: 7px;
-    position: center;
-    font-weight: lighter;
-    margin-right: 5%;
-    text-align: right;
-    color: white;
-}
-
-#line {
-    width: 94%;
-    height: 0.1%;
-    margin: auto;
-    position: absolute;
-    background-color: black;
-    top: 0;
-    bottom: 50%;
-    left: 0;
-    right: 0;
+  font-size: 7px;
+  margin-right: 5%;
+  text-align: right;
+  font-weight: lighter;
+  color: white;
 }
 
 /*
@@ -302,9 +293,9 @@ font-size: 1rem;
 */
 
 #button:active {
-    background-color: #2b772d;
-    box-shadow: 0px 0px #000000;
-    transform: translateY(3px);
+  background-color: #2b772d;
+  box-shadow: 0px 0px #000000;
+  transform: translateY(3px);
 }
 
 #findvarer {
@@ -325,17 +316,17 @@ font-size: 1rem;
 }
 
 #varerinput {
-    width: 60%;
-    height: 40px;
-    margin-top: 3.5%;
-    margin-bottom: 5%;
-    background-color: rgb(195, 195, 195);
-    border: none;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 0;
+  width: 60%;
+  height: 40px;
+  margin-top: 3.5%;
+  margin-bottom: 5%;
+  background-color: rgb(195, 195, 195);
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 0;
 }
 
 #plus {
@@ -385,35 +376,32 @@ font-size: 1rem;
 
 /*
 #findvarer {
-    color: black;
-    font-size: 1.563rem;
-    font-weight: 400;
-    line-height: 1.5;
-    position: absolute;
-    top: 23%;
-    bottom: 0;
-    left: 3%;
-    right: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: absolute;
+  top: 23%;
+  bottom: 0;
+  left: 3%;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #varerinput {
-    width: 60%;
-    height: 5%;
-    margin: auto;
-    position: absolute;
-    background-color: rgb(195, 195, 195);
-    border: none;
-    top: 0;
-    bottom: 40%;
-    left: 0;
-    right: 33.5%;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  height: 5%;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(195, 195, 195);
+  border: none;
+  top: 0;
+  bottom: 40%;
+  left: 0;
+  right: 33.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
