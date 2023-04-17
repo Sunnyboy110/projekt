@@ -8,7 +8,8 @@ import { StoreComponent } from './pages/store/store.component';
 import { AdminSiteComponent } from './pages/admin-site/admin-site.component';
 import { SoegefeltComponent } from './soegefelt/soegefelt.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopUpComponent } from './pages/store/pop-up/pop-up.component';
 
 
 @NgModule({
@@ -17,13 +18,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     StoreComponent,
     AdminSiteComponent,
-    SoegefeltComponent
+    SoegefeltComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
