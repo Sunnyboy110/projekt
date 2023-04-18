@@ -11,8 +11,8 @@ body {
 }
 
 #adminbutton {
-  width: 5%;
-  height: 10%;
+  width: 90px;
+  height: 90px;
   margin: 1%;
   position: relative;
   font-weight: bold;
@@ -53,8 +53,8 @@ body {
 }
 
 #storebutton {
-  width: 25%;
-  height: 50%;
+  width: 450px;
+  height: 450px;
   margin: auto;
   position: absolute;
   font-weight: bold;
@@ -97,8 +97,8 @@ body {
 
 
 #box {
-  width: 55%;
-  height: 20%;
+  width: 1050px;
+  height: 190px;
   margin: auto;
   position: absolute;
   background-color: white;
@@ -111,12 +111,12 @@ body {
 }
 
 #box2 {
-  width: 55%;
-  height: 75%;
+  width: 1050px;
+  height: 700px;
   margin: auto;
   position: absolute;
   background-color: white;
-  top: 20%;
+  top: 21%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -164,7 +164,7 @@ body {
 
 #avisButton {
   width: 110px;
-  height: 100px;
+  height: 110px;
   margin: 1%;
   position: absolute;
   top: 10%;
