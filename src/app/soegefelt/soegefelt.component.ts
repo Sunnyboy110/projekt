@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 import { SearchService} from '../search.service'
 
 @Component({
@@ -6,15 +6,33 @@ import { SearchService} from '../search.service'
   templateUrl: './soegefelt.component.html',
   styleUrls: ['./soegefelt.component.css']
 })
+
+
+
 export class SoegefeltComponent{
-  vareListe : any= [];
+  @Output() odreListe = new EventEmitter ();
+
+  vareListe : any = [];
+  order = [];
+
   constructor(private searchService : SearchService) {
 
   }
   searchChange(event:any) {
+
     const searchText = event.target.value;
+    console.log(searchText)
+    if(searchText){
     this.searchService.search(searchText).subscribe ( result => {
       this.vareListe = result;
     })
+  } else{
+    this.vareListe = [];
   }
+  }
+
+  addItem(event, vare) {
+    this.odreListe.emit(vare)
+  }
+
 }

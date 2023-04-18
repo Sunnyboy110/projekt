@@ -44,27 +44,19 @@
     </div>
     <div id="line">
     </div>
+
       <div>
         <div id="findvarer">
           Find varer
         <div>
           <!-- <input id="varerinput" type="text" placeholder="Søg efter varer her..."> -->
-          <app-soegefelt></app-soegefelt>
+          <app-soegefelt (odreListe)="fremvisning($event)" placeholder="Søg på en vare"></app-soegefelt>
         </div>
       </div>
-      <div id="vareliste">
-        <!--
-        <button id="minus" type="button" class="material-icons">
-          remove
-        </button>
-        <a id="antalvarer">
-          0
-        </a>
-        <button id="plus" type="button" class="material-icons">
-          add
-        </button>
-      -->
+      <div id="vareliste" *ngFor="let item of odre">
+        {{item['vare_navn']}}
       </div>
+
     </div>
     <!-- BOTTOM BOX -->
     <div>

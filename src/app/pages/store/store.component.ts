@@ -10,6 +10,12 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 })
 
 export class StoreComponent {
+  odre = [];
+  fremvisning(vare) {
+    console.log(vare)
+    this.odre = [...this.odre, vare]
+  }
+}
 
   constructor(private dialogRef : MatDialog){}
 

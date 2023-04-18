@@ -1,4 +1,4 @@
 <input type="text" (input)="searchChange($event)">
 <ul>
-  <li *ngFor="let vare of vareListe" > {{vare['vare_navn']}}</li>
+  <button *ngFor="let vare of vareListe" (click)="addItem($event, vare)"> {{vare['vare_navn']}}</button>
 </ul>
