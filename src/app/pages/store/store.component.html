@@ -54,7 +54,7 @@
         </div>
       </div>
       <div id="vareliste" *ngFor="let item of odre">
-        {{item['vare_navn']}}
+        <a>{{item['vare_navn']}}</a> <button id="minus" (click)="fjern()" > - </button> {{i}} <button id="plus" (click)="plus()"> + </button>
       </div>
 
     </div>
