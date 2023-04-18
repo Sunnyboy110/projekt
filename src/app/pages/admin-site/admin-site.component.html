@@ -8,11 +8,50 @@
   </button>
  </a>
 
- <h1>
+ <h1 id="shopList">
   Shopping List
  </h1>
- <form action="add" method="get">
-  <label for></label>
+ <form action="add" method="get" id="theList">
+  <label for="">Add Item</label>
+  <input type="text" name="item">
+  <input id="addNeed" type="submit" value="need">
+  <input id="addHave" type="submit" value="Have">
  </form>
+ <h2>Need:</h2>
+ <ul class="list">
+  <li>
+    <input type="checkbox" name="item">
+    Appache Helicopter
+    <a href="#">&#10006;</a>
+  </li>
+  <li>
+    <input type="checkbox" name="item">
+    Mikkel
+    <a href="#">&#10006;</a>
+  </li>
+  <li>
+    <input type="checkbox" name="item">
+    Egg
+    <a href="#">&#10006;</a>
+  </li>
+ </ul>
+ <h2>Have:</h2>
+ <ul class="list">
+  <li>
+    <input type="checkbox" name="item" checked>
+    Splyat
+    <a href="#">&#10006;</a>
+  </li>
+  <li>
+    <input type="checkbox" name="item" checked>
+    Mokkel
+    <a href="#">&#10006;</a>
+  </li>
+  <li>
+    <input type="checkbox" name="item" checked>
+    N U T T
+    <a href="#">&#10006;</a>
+  </li>
+ </ul>
 
 <router-outlet></router-outlet>

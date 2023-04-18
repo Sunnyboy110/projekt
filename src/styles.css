@@ -14,7 +14,7 @@ body {
   width: 5%;
   height: 10%;
   margin: 1%;
-  position: absolute;
+  position: relative;
   font-weight: bold;
   cursor: pointer;
   background-color: rgb(255, 255, 255);

@@ -1,0 +1,31 @@
+#shopList {
+  position: relative;
+}
+
+#theList {
+  position: relative;
+}
+
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 350px;
+  border: 1.3px solid #dedede;
+}
+
+.list li {
+  list-style: none;
+  background-color: aquamarine;
+  border-bottom: 1.3px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+li a {
+  float: right;
+  text-decoration: none;
+  color: red;
+}
