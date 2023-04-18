@@ -12,11 +12,18 @@ import { PopUpComponent } from './pop-up/pop-up.component';
 export class StoreComponent {
 
   constructor(private dialogRef : MatDialog){}
+  odre = [];
 
-  openDialog(){
+  fremvisning(vare) {
+    console.log(vare)
+    this.odre = [...this.odre, vare]
+  }
+    openDialog(){
     this.dialogRef.open(PopUpComponent, {
       height: '75%',
       width: '45%'
     } );
   }
- }
+}
+
+
