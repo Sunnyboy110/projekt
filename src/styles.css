@@ -213,6 +213,7 @@ body {
   width: 45%;
   height: 20%;
   margin: auto;
+  padding-left: 2%;
   position: absolute;
   background-color: rgb(195, 195, 195);
   border: none;
@@ -308,14 +309,20 @@ body {
 }
 
 #vareliste {
-  color: #2b772d;
+  list-style: none;
+  background-color: rgb(216, 216, 216);
+  border-bottom: 1.3px dotted #7e7e7e;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
 }
 
 #varerinput {
   width: 60%;
   height: 40px;
-  margin-top: 3.5%;
+  margin-top: 2.5%;
   margin-bottom: 5%;
+  padding-left: 2%;
   background-color: rgb(195, 195, 195);
   border: none;
   font-family: Arial, Helvetica, sans-serif;

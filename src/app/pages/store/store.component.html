@@ -6,7 +6,7 @@
   <!-- UPPER BOX -->
     <div>
       <div id="navn">
-        Navn
+        Navn:
       </div>
 
       <div>
@@ -47,10 +47,10 @@
 
       <div>
         <div id="findvarer">
-          Find varer
+          Find varer:
         <div>
           <!-- <input id="varerinput" type="text" placeholder="Søg efter varer her..."> -->
-          <app-soegefelt (odreListe)="fremvisning($event)" placeholder="Søg på en vare"></app-soegefelt>
+          <app-soegefelt (odreListe)="fremvisning($event)"></app-soegefelt>
         </div>
       </div>
       <div id="vareliste" *ngFor="let item of odre">
