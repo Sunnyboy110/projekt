@@ -212,15 +212,12 @@ body {
 #input {
   width: 45%;
   height: 20%;
-  margin: auto;
-  padding-left: 2%;
+  margin-top: 11%;
+  margin-left: 3%;
+  padding-left: 2.5%;
   position: absolute;
   background-color: rgb(195, 195, 195);
   border: none;
-  top: 40%;
-  bottom: 0%;
-  left: 0;
-  right: 48.5%;
   border-radius: 3px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -308,20 +305,10 @@ body {
   right: 0;
 }
 
-#vareliste {
-  list-style: none;
-  background-color: rgb(216, 216, 216);
-  border-bottom: 1.3px dotted #7e7e7e;
-  text-indent: 25px;
-  height: auto;
-  padding: 10px;
-}
-
 #varerinput {
   width: 60%;
   height: 40px;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+  position: absolute;
   padding-left: 2%;
   background-color: rgb(195, 195, 195);
   border: none;
@@ -331,6 +318,26 @@ body {
   font-weight: 400;
   line-height: 0;
 }
+
+.vareliste{
+  width: 94%;
+  position: absolute;
+  margin-top: 15%;
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  left: 1%;
+}
+
+.vareliste li {
+  list-style: none;
+  background-color: rgb(216, 216, 216);
+  border-bottom: 1.3px dotted #7e7e7e;
+  text-indent: 10px;
+  height: auto;
+  padding: 10px;
+}
+
 
 #plus {
   font-size: 200%;
