@@ -19,7 +19,7 @@ export class StoreComponent {
   fremvisning(vare) {
     console.log(vare)
     this.odre = [...this.odre, vare]
-
+    console.log(this.odre)
   }
     openDialog(){
     this.dialogRef.open(PopUpComponent, {
@@ -32,9 +32,9 @@ export class StoreComponent {
     this.i++
   }
 
-  fjern(varer){
+  fjern(vare): number{
     if(this.i < 2){
-      this.odre.splice(this.odre.indexOf(varer),1);
+      this.odre.splice(this.odre.indexOf(vare),1);
     }
       else {
         this.i--

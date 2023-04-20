@@ -32,6 +32,7 @@ export class SoegefeltComponent{
 
   addItem(event, vare) {
     this.odreListe.emit(vare)
+
   }
 
 }
