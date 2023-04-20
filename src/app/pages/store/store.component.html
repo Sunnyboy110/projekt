@@ -53,10 +53,25 @@
           <app-soegefelt (odreListe)="fremvisning($event)"></app-soegefelt>
         </div>
       </div>
-      <div id="vareliste" *ngFor="let item of odre">
-        <a>{{item['vare_navn']}}</a> <button id="minus" (click)="fjern()" > - </button> {{i}} <button id="plus" (click)="plus()"> + </button>
+      <div class="vareliste">
+        <!-- <ul>
+          <li>
+            Harrow
+          </li>
+          <li>
+            Harrow
+          </li>
+          <li>
+            Harrow
+          </li>
+        </ul> -->
       </div>
-
+      <div class="vareliste" *ngFor="let item of odre">
+        <a>{{item['vare_navn']}}</a>
+        <button id="minus" (click)="fjern(item)"> - </button>
+        {{i}}
+        <button id="plus" (click)="plus()"> + </button>
+      </div>
     </div>
     <!-- BOTTOM BOX -->
     <div>
