@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
+import { EMPTY, empty } from 'rxjs';
 
 
 @Component({
@@ -31,9 +32,9 @@ export class StoreComponent {
     this.i++
   }
 
-  fjern(){
+  fjern(varer){
     if(this.i < 2){
-      delete this.odre
+      this.odre.splice(this.odre.indexOf(varer),1);
     }
       else {
         this.i--

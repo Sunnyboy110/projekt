@@ -13,7 +13,6 @@ export class SoegefeltComponent{
   @Output() odreListe = new EventEmitter ();
 
   vareListe : any = [];
-  order = [];
 
   constructor(private searchService : SearchService) {
 
