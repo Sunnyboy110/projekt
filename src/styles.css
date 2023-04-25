@@ -214,7 +214,7 @@ body {
   height: 20%;
   margin-top: 11%;
   margin-left: 3%;
-  padding-left: 2.5%;
+  padding-left: 1%;
   position: absolute;
   background-color: rgb(195, 195, 195);
   border: none;
@@ -299,17 +299,15 @@ body {
   line-height: 0;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 3%;
-  right: 0;
+  margin-top: 5%;
+  margin-left: 3%;
 }
 
 #varerinput {
-  width: 60%;
+  width: 500px;
   height: 40px;
   position: absolute;
-  padding-left: 2%;
+  padding-left: 9%;
   background-color: rgb(195, 195, 195);
   border: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -317,37 +315,71 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 0;
+  margin-top: 25%;
 }
 
-.vareliste{
-  width: 94%;
-  position: absolute;
-  margin-top: 15%;
+#vareKnap {
+  color: black;
+  font-size: 18px;
+  width: 300px;
+  text-align: left;
+  /* list-style: none; */
+
+}
+
+#vareDiv {
+/* border: 5px outset black; */
+text-align: left;
+position: absolute;
+margin-top: 60%;
+
+}
+
+#vareliste{
+  width: 96%;
+  position: static;
   color: #555;
   font-size: 22px;
-  padding: 0 !important;
   left: 1%;
+  /* border: 5px outset black; */
+  justify-content: space-between;
+  column-count: 3;
 }
 
-.vareliste li {
-  list-style: none;
-  background-color: rgb(216, 216, 216);
-  border-bottom: 1.3px dotted #7e7e7e;
-  text-indent: 10px;
-  height: auto;
-  padding: 10px;
+#vareVisning {
+  padding-top: 15%;
+  padding-left: 3%;
+  /* border: 5px outset black; */
+  justify-content: space-between;
 }
 
+#varePris {
+  text-align: justify;
+  justify-content: space-between;
+}
+
+.col-navn{
+  /* background-color: pink; */
+  width: 250%;
+  float: left;
+}
+
+.col-pris {
+  /* background-color: purple; */
+  width: 75%;
+  float: left;
+  margin-left: 135%;
+}
 
 #plus {
-  font-size: 200%;
+  /* font-size: 200%;
   margin-top: 3.2%;
   margin-left: 15%;
   position: absolute;
   background-color: rgb(243, 243, 243);
   border: none;
   border-radius: 100%;
-  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169); */
 }
 
 #plus:hover {background-color: rgb(209, 209, 209);}
@@ -366,14 +398,14 @@ body {
 }
 
 #minus {
-  font-size: 200%;
+  /* font-size: 200%;
   margin-top: 3.2%;
   margin-left: 3%;
   position: absolute;
   background-color: rgb(243, 243, 243);
   border: black;
   border-radius: 100%;
-  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169);
+  box-shadow: 0px 3px 3px -1px rgb(169, 169, 169); */
 }
 
 #minus:hover {background-color: rgb(209, 209, 209);}

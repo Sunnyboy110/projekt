@@ -10,7 +10,7 @@ import { SearchService} from '../search.service'
 
 
 export class SoegefeltComponent{
-  @Output() odreListe = new EventEmitter ();
+  @Output() ordreListe = new EventEmitter ();
 
   vareListe : any = [];
 
@@ -31,7 +31,8 @@ export class SoegefeltComponent{
   }
 
   addItem(event, vare) {
-    this.odreListe.emit(vare)
+
+    this.ordreListe.emit(vare)
 
   }
 
