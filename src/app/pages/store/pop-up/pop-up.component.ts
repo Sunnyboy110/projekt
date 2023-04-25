@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -7,5 +7,10 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./pop-up.component.css']
 })
 export class PopUpComponent {
+
+
+  constructor() {
+
+  }
 
 }

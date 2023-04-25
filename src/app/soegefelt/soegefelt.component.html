@@ -1,10 +1,8 @@
 <input id="varerinput" type="text" (input)="searchChange($event)" placeholder="Søg efter varer her...">
-<ul id="vareKnapper">
-    <button *ngFor="let vare of vareListe" (click)="addItem($event, vare)"> {{vare['vare_navn']}}</button>
-    <li>
-      Hellow
-    </li>
-    <li>
-      Mokkel
-    </li>
-</ul>
+<div id="vareDiv">
+
+  <button id="vareKnap" *ngFor="let vare of vareListe" (click)="addItem($event, vare)" > {{vare['vare_navn']}} </button>
+
+</div>
+
+

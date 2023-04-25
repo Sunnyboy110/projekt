@@ -5,12 +5,13 @@
 
   <!-- UPPER BOX -->
     <div>
-      <div id="navn">
+      <!-- <div id="">
         Navn:
-      </div>
+      </div> -->
 
       <div>
-        <input id="input" type="text" placeholder ="Skriv dit fulde navn her...">
+        <label id= "navn" for="kundenavn">Navn:</label>
+        <input #navn id="input" type="text" placeholder ="Skriv dit fulde navn her...">
       </div>
 
 
@@ -49,24 +50,29 @@
         <div id="findvarer">
           Find varer:
         <div>
-          <!-- <input id="varerinput" type="text" placeholder="Søg efter varer her..."> -->
-          <app-soegefelt (odreListe)="fremvisning($event)"></app-soegefelt>
+          <app-soegefelt (ordreListe)="fremvisning($event)"></app-soegefelt>
         </div>
       </div>
-      <div id="vareliste" *ngFor="let item of odre">
-        <a>{{item['vare_navn']}}</a>
-        <button id="minus" (click)="fjern(item)"> - </button>
-        {{i}}
-        <button id="plus" (click)="plus()"> + </button>
+
+      <div id="vareVisning">
+        <div id="vareliste" *ngFor="let item of ordre">
+          <div class="col-navn">{{item.navn}}</div>
+            <span class="col-pris" id="varePris">
+              <button id="minus"  (click)="fjern(item)"> - </button>
+               {{item["antal"]}}
+              <button id="plus" (click)="plus(item)"> + </button>
+              {{item["pris"] * item["antal"]}}
+            </span>
+        </div>
       </div>
     </div>
     <!-- BOTTOM BOX -->
     <div>
       <div>
         <a routerLink="bestilling">
-          <button (click)="openDialog()" id="button" type="button">
+          <button (click)="openDialog(navn.value)" id="button" type="button">
             <div id="Buttontext">Fortsæt til bestilling</div>
-            <div id="Buttontext2">0 Kr.</div>
+            <div id="Buttontext2"></div>
             <div id="Buttonpant">Heraf pant 0 kr.</div>
           </button>
         </a>
