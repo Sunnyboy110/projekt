@@ -299,17 +299,16 @@ body {
   line-height: 0;
   font-family: Arial, Helvetica, sans-serif;
   position: absolute;
-  top: 10%;
-  bottom: 0;
-  left: 3%;
-  right: 0;
+  margin-top: 5%;
+  margin-left: 3%;
 }
 
 #varerinput {
-  width: 60%;
+  width: 230%;
   height: 40px;
-  position: absolute;
-  padding-left: 2%;
+  margin-top: 10%;
+  position: relative;
+  padding-left: 9%;
   background-color: rgb(195, 195, 195);
   border: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -319,23 +318,28 @@ body {
   line-height: 0;
 }
 
-.vareliste{
+#vareKnapper{
+  color: #383838;
+  font-size: 18px;
+  padding: 0 !important;
+  width: 230%;
+  list-style: none;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+}
+
+#vareliste{
   width: 94%;
-  position: absolute;
+  list-style: none;
+  position: relative;
   margin-top: 15%;
   color: #555;
   font-size: 22px;
-  padding: 0 !important;
   left: 1%;
-}
-
-.vareliste li {
-  list-style: none;
   background-color: rgb(216, 216, 216);
   border-bottom: 1.3px dotted #7e7e7e;
   text-indent: 10px;
-  height: auto;
-  padding: 10px;
 }
 
 
@@ -384,34 +388,6 @@ body {
   transform: translateY(2px);
 }
 
-/*
-#findvarer {
-  color: black;
-  font-size: 1.563rem;
-  font-weight: 400;
-  line-height: 1.5;
-  position: absolute;
-  top: 23%;
-  bottom: 0;
-  left: 3%;
-  right: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#varerinput {
-  width: 60%;
-  height: 5%;
-  margin: auto;
-  position: absolute;
-  background-color: rgb(195, 195, 195);
-  border: none;
-  top: 0;
-  bottom: 40%;
-  left: 0;
-  right: 33.5%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-*/
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

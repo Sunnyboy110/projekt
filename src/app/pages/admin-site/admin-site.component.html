@@ -8,6 +8,32 @@
   </button>
  </a>
 
+ <script>
+  let row, column, div, br;
+  for (row=0; row < 8;row++) //laver 8 rows af divs
+  {
+    for (column = 0; column < 8; column++)//laver 8 columns
+    {
+      div = document.createElement('DIV')//'div' element created
+      document.body.appendChild(div); //added 'div' element to the parent node which is the "body" element
+
+      if(row % 2 == 1)//odd
+      {
+        div.style.backgroundColor = "blue";
+      }
+      if(row % 2 == 0)//even
+      {
+        div.style.backgroundColor = "red";
+      }
+    }
+    br = document.createElement('BR'); //create 'br' tag
+    document.body.appendChild(br); //'br' tag added after every 'div' element
+  }
+ </script>
+
+
+
+ <!--
  <h1 id="shopList">
   Shopping List
  </h1>
@@ -53,5 +79,6 @@
     <a href="#">&#10006;</a>
   </li>
  </ul>
+-->
 
 <router-outlet></router-outlet>
