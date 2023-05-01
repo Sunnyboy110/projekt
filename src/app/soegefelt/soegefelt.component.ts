@@ -7,8 +7,6 @@ import { SearchService} from '../search.service'
   styleUrls: ['./soegefelt.component.css']
 })
 
-
-
 export class SoegefeltComponent{
   @Output() ordreListe = new EventEmitter ();
 
