@@ -10,8 +10,8 @@
       </div> -->
 
       <div>
-        <label id= "navn" for="kundenavn">Navn:</label>
-        <input #navn id="input" type="text" placeholder ="Skriv dit fulde navn her...">
+        <label id = "navn" >Navn:</label>
+        <input #navn type="text" id= "input"  placeholder  = "Skriv dit fulde navn her...">
       </div>
 
 
@@ -55,12 +55,12 @@
       </div>
 
       <div id="vareVisning">
-        <div id="vareliste" *ngFor="let item of ordre">
+        <div class="vareliste" *ngFor="let item of ordre">
           <div class="col-navn">{{item.navn}}</div>
             <span class="col-pris" id="varePris">
-              <button id="minus"  (click)="fjern(item)"> - </button>
+              <button (click)="fjern(item)"> - </button>
                {{item["antal"]}}
-              <button id="plus" (click)="plus(item)"> + </button>
+              <button (click)="plus(item)"> + </button>
               {{item["pris"] * item["antal"]}}
             </span>
         </div>
@@ -73,7 +73,7 @@
         <a routerLink="bestilling">
           <button (click)="openDialog(navn.value)" id="button" type="button">
             <div id="Buttontext">Fortsæt til bestilling</div>
-            <div id="Buttontext2"></div>
+            <div id="Buttontext2"> {{totalPris}} kr</div>
             <div id="Buttonpant">Heraf pant 0 kr.</div>
           </button>
         </a>

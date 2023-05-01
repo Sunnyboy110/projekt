@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { Component, Inject, InjectionToken, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-pop-up',
@@ -8,8 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class PopUpComponent {
 
-
-  constructor() {
+  constructor(@Inject(MAT_DIALOG_DATA) public data : {navn: string, ordre : any, tPris : number}) {
 
   }
 

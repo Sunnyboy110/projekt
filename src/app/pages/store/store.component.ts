@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { EMPTY, empty } from 'rxjs';
@@ -19,6 +19,8 @@ export class StoreComponent {
   }
 
   ordre : any = [];
+  totalPris = 0;
+  navnInput = '';
 
   fremvisning(vare) {
 
@@ -37,25 +39,46 @@ export class StoreComponent {
       }
       this.ordre = [...this.ordre, ordreItem]
     }
+    this.totalPris = this.udregnTotalPris(this.ordre)
 
-    console.log(this.ordre)
+    // console.log(this.ordre)
   }
 
     openDialog(val){
-      this.ordre.push(val)
-      console.log(this.ordre)
-    this.dialogRef.open(PopUpComponent, {
-      height: '75%',
-      width: '45%'
-    } );
+      this.navnInput = val
+      console.log(this.navnInput)
+
+      if(this.navnInput === ''){
+        let inputNavn = document.getElementById('input')  ;
+        inputNavn.style.backgroundColor = '#D8000C';
+
+      }
+      else{
+        const bestilling : any = {
+          navn : this.navnInput,
+          ordreListe :this.ordre
+        }
+        console.log(bestilling)
+
+      this.dialogRef.open(PopUpComponent, {
+        height: '75%',
+        width: '45%',
+        data : {
+          navn : this.navnInput,
+          ordre : this.ordre,
+          tPris : this.totalPris
+        }
+      } );
+
+      }
 
   }
 
   plus(ordreVare){
     console.log(ordreVare)
     ordreVare.antal++
-    // console.log(ordreVare.antal)
-
+    console.log(ordreVare)
+    this.totalPris = this.udregnTotalPris(this.ordre)
   }
 
   fjern(ordreVare){
@@ -67,8 +90,18 @@ export class StoreComponent {
         return vareObject.id !== ordreVare.id
     })
 
-    this.ordre= newOrdre
+    this.ordre = newOrdre
     }
+    this.totalPris = this.udregnTotalPris(this.ordre)
+  }
+
+  udregnTotalPris (ordre){
+    let samletPris = 0;
+    for (const ordreItem of ordre) {
+      samletPris += ordreItem.antal * ordreItem.pris
+    }
+    console.log(samletPris)
+    return samletPris;
   }
 
 

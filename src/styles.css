@@ -217,7 +217,6 @@ body {
   padding-left: 1%;
   position: absolute;
   background-color: rgb(195, 195, 195);
-  border: none;
   border-radius: 3px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -332,18 +331,19 @@ body {
 text-align: left;
 position: absolute;
 margin-top: 60%;
-
+z-index: 2;
 }
 
-#vareliste{
+.vareliste{
   width: 96%;
-  position: static;
+  position: relative;
   color: #555;
   font-size: 22px;
   left: 1%;
   /* border: 5px outset black; */
   justify-content: space-between;
   column-count: 3;
+  z-index: 1;
 }
 
 #vareVisning {
@@ -351,6 +351,7 @@ margin-top: 60%;
   padding-left: 3%;
   /* border: 5px outset black; */
   justify-content: space-between;
+
 }
 
 #varePris {
@@ -369,6 +370,7 @@ margin-top: 60%;
   width: 75%;
   float: left;
   margin-left: 135%;
+
 }
 
 #plus {
@@ -444,6 +446,10 @@ margin-top: 60%;
   font-family: Arial, Helvetica, sans-serif;
 }
 */
+#navnpop{
+    border: 5px outset black;
+}
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
