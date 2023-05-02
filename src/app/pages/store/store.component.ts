@@ -21,6 +21,7 @@ export class StoreComponent {
   ordre : any = [];
   totalPris = 0;
   navnInput = '';
+  pant = 0;
 
   fremvisning(vare) {
 
@@ -35,11 +36,13 @@ export class StoreComponent {
         id : vare.id,
         navn : vare.vare_navn,
         antal : 1,
-        pris : vare.pris
+        pris : vare.pris,
+        pant : vare.Pant
       }
       this.ordre = [...this.ordre, ordreItem]
     }
     this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
 
     // console.log(this.ordre)
   }
@@ -66,7 +69,8 @@ export class StoreComponent {
         data : {
           navn : this.navnInput,
           ordre : this.ordre,
-          tPris : this.totalPris
+          tPris : this.totalPris,
+          pant : this.pant,
         }
       } );
 
@@ -79,6 +83,7 @@ export class StoreComponent {
     ordreVare.antal++
     console.log(ordreVare)
     this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
   }
 
   fjern(ordreVare){
@@ -93,17 +98,25 @@ export class StoreComponent {
     this.ordre = newOrdre
     }
     this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
   }
 
   udregnTotalPris (ordre){
     let samletPris = 0;
     for (const ordreItem of ordre) {
-      samletPris += ordreItem.antal * ordreItem.pris
+      samletPris += ordreItem.pris * ordreItem.antal + ordreItem.antal * ordreItem.pant
     }
     console.log(samletPris)
     return samletPris;
   }
 
+  pantPris (ordre) {
+    let pPris = 0;
+    for (const ordreItem of ordre) {
+      pPris += ordreItem.antal * ordreItem.pant
+    }
+    return pPris;
+  }
 
 
 }

@@ -335,14 +335,16 @@ z-index: 2;
 }
 
 .vareliste{
+  margin-top: 1%;
   width: 96%;
   position: relative;
   color: #555;
   font-size: 22px;
   left: 1%;
   /* border: 5px outset black; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-count: 3;
+  /* column-rule-style: solid; */
   z-index: 1;
 }
 
@@ -354,23 +356,26 @@ z-index: 2;
 
 }
 
-#varePris {
+/* #varePris {
   text-align: justify;
   justify-content: space-between;
-}
+} */
 
 .col-navn{
   /* background-color: pink; */
   width: 250%;
   float: left;
+  text-align: left;
 }
 
 .col-pris {
   /* background-color: purple; */
-  width: 75%;
-  float: left;
-  margin-left: 135%;
+  width: 80%;
+  text-align: right;
+}
 
+.col.antal {
+  text-align: right;
 }
 
 #plus {

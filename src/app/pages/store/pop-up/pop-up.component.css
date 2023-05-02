@@ -30,7 +30,7 @@
 }
 
 .popPris {
-  text-align: right;
+  text-align: center;
 }
 
 #tabel {
@@ -66,7 +66,7 @@
     }
 
 #totalalt {
-    width: 60%;
+    width: 200px;
     height: 10%;
     margin: auto;
     position: absolute;
@@ -91,7 +91,7 @@
     position: relative;
     font-size: 20px;
     columns: 2;
-    text-align: left;
+    text-align: right;
     /* column-rule-style: solid; */
     justify-content: space-between;
 }
@@ -107,4 +107,11 @@
     font-weight: lighter;
 }
 
+#popPant {
+  font-size: 7px;
+  margin-right: 5%;
+  text-align: center;
+  font-weight: lighter;
+  color: black;
+}
 
