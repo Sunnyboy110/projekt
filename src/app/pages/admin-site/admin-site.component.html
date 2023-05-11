@@ -6,8 +6,34 @@
       logout
     </div>
   </button>
- </a>
+</a>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="registerForm" [ngSubmit]="onSubmit()">
+
+        <div class="form-group">
+          <label for="Navn">Første navn:</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary">
+            Register
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--
  <script>
   let row, column, div, br;
   for (row=0; row < 8;row++) //laver 8 rows af divs
@@ -30,8 +56,7 @@
     document.body.appendChild(br); //'br' tag added after every 'div' element
   }
  </script>
-
-
+-->
 
  <!--
  <h1 id="shopList">

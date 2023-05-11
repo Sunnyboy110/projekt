@@ -37,7 +37,6 @@ export class StoreComponent {
       }
       this.ordre = [...this.ordre, ordreItem]
     }
-
     console.log(this.ordre)
   }
 
@@ -48,14 +47,12 @@ export class StoreComponent {
       height: '75%',
       width: '45%'
     } );
-
   }
 
   plus(ordreVare){
     console.log(ordreVare)
     ordreVare.antal++
     // console.log(ordreVare.antal)
-
   }
 
   fjern(ordreVare){
@@ -70,9 +67,6 @@ export class StoreComponent {
     this.ordre= newOrdre
     }
   }
-
-
-
 }
 
 
