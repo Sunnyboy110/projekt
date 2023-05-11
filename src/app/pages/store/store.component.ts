@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { EMPTY, empty } from 'rxjs';
@@ -19,6 +19,9 @@ export class StoreComponent {
   }
 
   ordre : any = [];
+  totalPris = 0;
+  navnInput = '';
+  pant = 0;
 
   fremvisning(vare) {
 
@@ -33,26 +36,54 @@ export class StoreComponent {
         id : vare.id,
         navn : vare.vare_navn,
         antal : 1,
-        pris : vare.pris
+        pris : vare.pris,
+        pant : vare.Pant
       }
       this.ordre = [...this.ordre, ordreItem]
     }
-    console.log(this.ordre)
+    this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
+
+    // console.log(this.ordre)
   }
 
     openDialog(val){
-      this.ordre.push(val)
-      console.log(this.ordre)
-    this.dialogRef.open(PopUpComponent, {
-      height: '75%',
-      width: '45%'
-    } );
+      this.navnInput = val
+      console.log(this.navnInput)
+
+      if(this.navnInput === ''){
+        let inputNavn = document.getElementById('input')  ;
+        inputNavn.style.backgroundColor = '#D8000C';
+
+      }
+      else{
+        const bestilling : any = {
+          navn : this.navnInput,
+          ordreListe :this.ordre
+        }
+        console.log(bestilling)
+
+      this.dialogRef.open(PopUpComponent, {
+        height: '75%',
+        width: '45%',
+        data : {
+          navn : this.navnInput,
+          ordre : this.ordre,
+          tPris : this.totalPris,
+          pant : this.pant,
+        }
+      } );
+
+      }
+
   }
 
   plus(ordreVare){
     console.log(ordreVare)
     ordreVare.antal++
-    // console.log(ordreVare.antal)
+    console.log(ordreVare)
+    this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
   }
 
   fjern(ordreVare){
@@ -64,9 +95,30 @@ export class StoreComponent {
         return vareObject.id !== ordreVare.id
     })
 
-    this.ordre= newOrdre
+    this.ordre = newOrdre
     }
+    this.totalPris = this.udregnTotalPris(this.ordre)
+    this.pant = this.pantPris(this.ordre)
   }
+
+  udregnTotalPris (ordre){
+    let samletPris = 0;
+    for (const ordreItem of ordre) {
+      samletPris += ordreItem.pris * ordreItem.antal + ordreItem.antal * ordreItem.pant
+    }
+    console.log(samletPris)
+    return samletPris;
+  }
+
+  pantPris (ordre) {
+    let pPris = 0;
+    for (const ordreItem of ordre) {
+      pPris += ordreItem.antal * ordreItem.pant
+    }
+    return pPris;
+  }
+
+
 }
 
 

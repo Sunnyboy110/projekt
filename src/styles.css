@@ -218,7 +218,6 @@ body {
   padding-left: 1%;
   position: absolute;
   background-color: rgb(195, 195, 195);
-  border: none;
   border-radius: 3px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -333,18 +332,21 @@ body {
 text-align: left;
 position: absolute;
 margin-top: 60%;
-
+z-index: 2;
 }
 
-#vareliste{
+.vareliste{
+  margin-top: 1%;
   width: 96%;
-  position: static;
+  position: relative;
   color: #555;
   font-size: 22px;
   left: 1%;
   /* border: 5px outset black; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-count: 3;
+  /* column-rule-style: solid; */
+  z-index: 1;
 }
 
 #vareVisning {
@@ -352,24 +354,29 @@ margin-top: 60%;
   padding-left: 3%;
   /* border: 5px outset black; */
   justify-content: space-between;
+
 }
 
-#varePris {
+/* #varePris {
   text-align: justify;
   justify-content: space-between;
-}
+} */
 
 .col-navn{
   /* background-color: pink; */
   width: 250%;
   float: left;
+  text-align: left;
 }
 
 .col-pris {
   /* background-color: purple; */
-  width: 75%;
-  float: left;
-  margin-left: 135%;
+  width: 80%;
+  text-align: right;
+}
+
+.col.antal {
+  text-align: right;
 }
 
 #plus {

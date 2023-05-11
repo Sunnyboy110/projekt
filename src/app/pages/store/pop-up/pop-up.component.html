@@ -1,15 +1,22 @@
 <div>
   <div  id="Navnpop">
-
+    {{data.navn}}
     </div>
+    <div id="linepopup">
+      <div id="tabel">Vare <div>Antal</div> <div>Pris</div></div>
+      <div class="popVare" *ngFor="let item of data.ordre" > {{item.navn}} <div class="popAntal"> {{item.antal}} stk </div> <div class="popPris"> {{item.pris * item.antal}} kr </div> </div></div>
 
-  <div id="linepopup"></div>
+
+
+
 
   <button id="bekraeftknap" type="button">Bekræft</button>
 
   <button id="totalalt" type="button">
-    <div id="totaltekst">Total:</div>
-    <div id="totalpant">Pant:</div>
+    <div  id="totaltekst">Total: <div class="popPris"> {{data.tPris}}kr   <div id="popPant"> Heraf pant {{data.pant}} kr.</div>
+ </div></div>
+
+    <!-- <div id="totalpant">Pant:</div> -->
   </button>
 
 </div>

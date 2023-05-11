@@ -23,6 +23,22 @@
     right: 0;
 }
 
+.popVare {
+  columns: 3;
+  text-align: center;
+  column-rule-style: solid;
+}
+
+.popPris {
+  text-align: center;
+}
+
+#tabel {
+  margin-bottom: 20px;
+  columns: 3;
+  text-align: center;
+}
+
 #bekraeftknap {
         width: 45%;
         height: 10%;
@@ -50,7 +66,7 @@
     }
 
 #totalalt {
-    width: 60%;
+    width: 200px;
     height: 10%;
     margin: auto;
     position: absolute;
@@ -72,9 +88,12 @@
     margin: 0;
     font-weight: bold;
     color: black;
-    position: absolute;
+    position: relative;
     font-size: 20px;
-    text-align: left;
+    columns: 2;
+    text-align: right;
+    /* column-rule-style: solid; */
+    justify-content: space-between;
 }
 
 #totalpant {
@@ -87,3 +106,12 @@
     text-align: right;
     font-weight: lighter;
 }
+
+#popPant {
+  font-size: 7px;
+  margin-right: 5%;
+  text-align: center;
+  font-weight: lighter;
+  color: black;
+}
+
