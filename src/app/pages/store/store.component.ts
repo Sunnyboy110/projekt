@@ -72,10 +72,8 @@ export class StoreComponent {
           tPris : this.totalPris,
           pant : this.pant,
         }
-      } );
-
-      }
-
+      });
+    }
   }
 
   plus(ordreVare){
@@ -117,8 +115,6 @@ export class StoreComponent {
     }
     return pPris;
   }
-
-
 }
 
 
