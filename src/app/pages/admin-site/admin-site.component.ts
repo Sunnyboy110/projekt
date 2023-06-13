@@ -7,8 +7,5 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./admin-site.component.css']
 })
 export class AdminSiteComponent {
-  registerForm!:FormGroup
-  submitted = false;
 
-  constructor(private formBuilder:FormBuilder)
 }
