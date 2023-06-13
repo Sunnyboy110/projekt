@@ -1,3 +1,4 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 
 body, html {
   height: calc_(100% - 4em);
