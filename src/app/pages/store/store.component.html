@@ -5,16 +5,10 @@
 
   <!-- UPPER BOX -->
     <div>
-      <!-- <div id="">
-        Navn:
-      </div> -->
-
       <div>
         <label id = "navn" >Navn:</label>
-        <input #navn type="text" id= "input"  placeholder  = "Skriv dit fulde navn her...">
+        <input #navn type="text" id= "input" placeholder  = "Skriv dit fulde navn her..." >
       </div>
-
-
 
       <a routerLink="/home">
         <button id="arrowButton" type="button" class="material-icons">
@@ -65,7 +59,7 @@
              <button (click)="plus(item)"> + </button>
             </div>
             <div class="col-pris">
-              {{item["pris"] * item["antal"]}} kr.
+              {{item["pris"] * item.antal}} kr.
             </div>
         </div>
       </div>
@@ -74,7 +68,7 @@
     <div>
       <div>
         <a routerLink="bestilling">
-          <button (click)="openDialog(navn.value)" id="button" type="button">
+          <button (click)="openDialog(navn.value)" id="button" type="button" [disabled]="isButtonDisabled()">
             <div id="Buttontext">Fortsæt til bestilling</div>
             <div id="Buttontext2"> {{totalPris}} kr</div>
             <div id="Buttonpant" >Heraf pant {{pant}}kr.</div>

@@ -1,8 +1,9 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { EMPTY, empty } from 'rxjs';
 import { NgFor } from '@angular/common';
+import { AdminSiteComponent } from '../admin-site/admin-site.component';
 
 
 @Component({
@@ -15,6 +16,7 @@ import { NgFor } from '@angular/common';
 
 export class StoreComponent {
 
+  @ViewChild('navn') navn : ElementRef <HTMLInputElement>;
   constructor(private dialogRef : MatDialog){
   }
 
@@ -22,6 +24,17 @@ export class StoreComponent {
   totalPris = 0;
   navnInput = '';
   pant = 0;
+
+
+
+  isButtonDisabled(){
+    if(this.ordre.length === 0 || this.navn.nativeElement.value === ''){
+      return true}
+    else {
+      return false
+    }
+
+  }
 
   fremvisning(vare) {
 
@@ -47,34 +60,61 @@ export class StoreComponent {
     // console.log(this.ordre)
   }
 
-    openDialog(val){
-      this.navnInput = val
-      console.log(this.navnInput)
+  //   openDialog(val){
+  //     this.navnInput = val
+  //     console.log(this.navnInput)
 
-      if(this.navnInput === ''){
-        let inputNavn = document.getElementById('input')  ;
-        inputNavn.style.backgroundColor = '#D8000C';
+  //     if(this.navnInput === ''){
+  //       let inputNavn = document.getElementById('input') ;
+  //       inputNavn.style.border = 'solid';
+  //       inputNavn.style.borderColor = '#D8000C' ;
+  //     }
+  //     else{
+  //       const bestilling : any = {
+  //         navn : this.navnInput,
+  //         ordreListe : this.ordre
+  //       }
+  //       console.log(bestilling)
 
+  //     this.dialogRef.open(PopUpComponent, {
+  //       height: '75%',
+  //       width: '45%',
+  //       data : {
+  //         navn : this.navnInput,
+  //         ordre : this.ordre,
+  //         tPris : this.totalPris,
+  //         pant : this.pant,
+  //       }
+  //     } );
+
+  //     }
+
+  // }
+
+
+
+  openDialog(val){
+    this.navnInput = val
+    console.log(this.navnInput)
+
+
+      const bestilling : any = {
+        navn : this.navnInput,
+        ordreListe : this.ordre
       }
-      else{
-        const bestilling : any = {
-          navn : this.navnInput,
-          ordreListe :this.ordre
-        }
-        console.log(bestilling)
+      console.log(bestilling)
 
-      this.dialogRef.open(PopUpComponent, {
-        height: '75%',
-        width: '45%',
-        data : {
-          navn : this.navnInput,
-          ordre : this.ordre,
-          tPris : this.totalPris,
-          pant : this.pant,
-        }
-      });
-    }
-  }
+    this.dialogRef.open(PopUpComponent, {
+      height: '75%',
+      width: '45%',
+      data : {
+        navn : this.navnInput,
+        ordre : this.ordre,
+        tPris : this.totalPris,
+        pant : this.pant,
+      }
+    } );
+}
 
   plus(ordreVare){
     console.log(ordreVare)
@@ -102,7 +142,7 @@ export class StoreComponent {
   udregnTotalPris (ordre){
     let samletPris = 0;
     for (const ordreItem of ordre) {
-      samletPris += ordreItem.pris * ordreItem.antal + ordreItem.antal * ordreItem.pant
+      samletPris += ordreItem.pris * ordreItem.antal + ordreItem.pant * ordreItem.antal
     }
     console.log(samletPris)
     return samletPris;
@@ -116,5 +156,4 @@ export class StoreComponent {
     return pPris;
   }
 }
-
 
