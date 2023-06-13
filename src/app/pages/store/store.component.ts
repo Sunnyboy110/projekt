@@ -155,7 +155,5 @@ export class StoreComponent {
     }
     return pPris;
   }
-
-
 }
 
